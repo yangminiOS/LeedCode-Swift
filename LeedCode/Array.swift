@@ -181,6 +181,9 @@ class Array: NSObject {
     
     
     func generate(_ numRows: Int) -> [[Int]] {
+        if(numRows == 0) {
+            return []
+        }
         if(numRows == 1) {
             return [[1]]
         }
@@ -188,13 +191,45 @@ class Array: NSObject {
             return[[1], [1,1]]
         }
         var result: [[Int]] = [[1],[1,1]]
-        for i in 1 ..< (numRows - 2) {
+        for i in 0 ..< (numRows - 2) {
             
+            var newArray: [Int] = [1]
+            let lastArray = result.last
+            if let last = lastArray {
+                for j in 1 ..< last.count {
+                    let newVaule = last[j] + last[j - 1]
+                    newArray.append(newVaule)
+                }
+            }
+            newArray.append(1)
+            
+            result.append(newArray)
         }
-        return [[1]]
+        
+        return result
     }
     
     
+    func getRow(_ rowIndex: Int) -> [Int] {
+        var old: [Int] = [1,1]
+        var new: [Int] = [1]
+        for i in 1 ..< rowIndex + 1 {
+            new = [1]
+            //print(new)
+            if (i >= 2) {
+                for j in 1 ..< old.count  {
+                    let newItem = old[j] + old[j - 1]
+                    new.append(newItem)
+                }
+            }
+            new.append(1)
+            old = new
+            print(i)
+            print(new)
+        }
+        
+        return new
+    }
     
     
     
