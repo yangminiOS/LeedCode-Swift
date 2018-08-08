@@ -148,16 +148,56 @@ class Array: NSObject {
     
     func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
         
-        if(n <= 0){
+        if(n <= 0) {
             return
         }
-        var target = nums2[0]
-        var left = 0
-        var right = m - 1
-        
-        while n > 0 {
-            var mid: Int = left + (right - left) / 2
+        var i = 0
+        var j = 0
+        let lenght = nums1.count
+        while (j < n  && i < lenght) {
+            var temp = lenght - 1
+            
+            if(nums1[i] >= nums2[j]) {
+                while temp > i {
+                    nums1[temp] = nums1[temp - 1]
+                    
+                    temp = temp - 1
+                }
+                nums1[i] = nums2[j]
+                i += 1
+                j += 1
+            }else {
+                i += 1
+            }
             
         }
+        while j < n {
+            nums1[m + j] = nums2[j]
+            j += 1
+            
+        }
+        
     }
+    
+    
+    func generate(_ numRows: Int) -> [[Int]] {
+        if(numRows == 1) {
+            return [[1]]
+        }
+        if (numRows == 2) {
+            return[[1], [1,1]]
+        }
+        var result: [[Int]] = [[1],[1,1]]
+        for i in 1 ..< (numRows - 2) {
+            
+        }
+        return [[1]]
+    }
+    
+    
+    
+    
+    
+    
+    
 }

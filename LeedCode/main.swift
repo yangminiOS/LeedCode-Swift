@@ -10,6 +10,8 @@ import Foundation
 
 let testArray = Array.init()
 
+var num1: [Int] = [1, 2, 3,0,0,0]
 
+let num2: [Int] = [ 2, 5, 6]
 
-
+testArray.merge(&num1, 3, num2, 3)
