@@ -1,6 +1,7 @@
 # LeedCode-Swift
 LeedCode 刷题
 * 第一部分 数组
+```
 1. func twoSun(_ nums: [Int], _ target: Int) ->[Int]
 
 2. func ambiguousCoordinates(_ S: String) -> [String]
@@ -22,3 +23,5 @@ LeedCode 刷题
 10. func generate(_ numRows: Int) -> [[Int]]
 
 11. func getRow(_ rowIndex: Int) -> [Int]
+
+```
