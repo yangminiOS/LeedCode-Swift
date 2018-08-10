@@ -232,7 +232,90 @@ class Array: NSObject {
     }
     
     
+    func maxProfit(_ prices: [Int]) -> Int {
+        var sur = 0
+        if(prices.count < 1) {
+            return sur
+        }
+        var buy = prices[0]
+        var saril = buy
+        for i in 1 ..< prices.count {
+            if(buy > prices[i]) {
+                buy = prices[i]
+                saril = buy
+            }else{
+                if((prices[i] - buy) > sur) {
+                    saril = prices[i]
+                    sur = prices[i] - buy
+                }
+            }
+        }
+        return sur
+    }
     
+    func maxProfit2(_ prices: [Int]) -> Int {
+        var sum = 0
+        if(prices.count < 1) {
+            return sum
+        }
+        var buy = prices[0]
+        var saril = buy
+        
+        for i in 1 ..< prices.count {
+            if(prices[i] > saril) {
+                saril = prices[i]
+            }else {
+                sum = sum + saril -  buy
+                buy = prices[i]
+                saril = buy
+            }
+        }
+        if(saril > buy) {
+            sum = sum + saril - buy
+        }
+            
+        return sum
+    }
     
+    func maxProfit3(_ prices: [Int]) -> Int {
+        var sum = 0
+        if(prices.count < 1) {
+            return sum
+        }
+        var resultArray: [Int] = [0, 0]
+        var buy = prices[0]
+        var saril = buy
+        for i in 1 ..< prices.count {
+            
+            if(prices[i] > saril) {
+                saril = prices[i]
+            }else {
+                let gold = saril - buy
+                let first = resultArray[0] + gold
+                let second = resultArray[1] + gold
+                if(first > second) {
+                    resultArray[1] = gold
+                }else{
+                    resultArray[0] = gold
+                }
+                
+                buy = prices[i]
+                saril = buy
+            }
+        }
+        
+        if(saril > buy) {
+            let gold = saril - buy
+            let first = resultArray[0] + gold
+            let second = resultArray[1] + gold
+            if(first > second) {
+                resultArray[1] = gold
+            }else{
+                resultArray[0] = gold
+            }
+        }
+        sum = resultArray[0]  + resultArray[1]
+        return sum
+    }
     
 }

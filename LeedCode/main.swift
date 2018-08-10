@@ -10,8 +10,7 @@ import Foundation
 
 let testArray = Array.init()
 
-var num1: [Int] = [1, 2, 3,0,0,0]
-
-let num2: [Int] = [ 2, 5, 6]
+var num1: [Int] = [7,6,4,3,1]
 
 
+print(testArray.maxProfit3(num1))
