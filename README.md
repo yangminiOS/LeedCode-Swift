@@ -24,4 +24,6 @@ LeedCode 刷题
 
 11. func getRow(_ rowIndex: Int) -> [Int]
 
+12. func maxProfit2(_ prices: [Int]) -> Int
+
 ```
