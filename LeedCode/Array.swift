@@ -277,45 +277,29 @@ class Array: NSObject {
         return sum
     }
     
-    func maxProfit3(_ prices: [Int]) -> Int {
-        var sum = 0
-        if(prices.count < 1) {
-            return sum
-        }
-        var resultArray: [Int] = [0, 0]
-        var buy = prices[0]
-        var saril = buy
-        for i in 1 ..< prices.count {
-            
-            if(prices[i] > saril) {
-                saril = prices[i]
-            }else {
-                let gold = saril - buy
-                let first = resultArray[0] + gold
-                let second = resultArray[1] + gold
-                if(first > second) {
-                    resultArray[1] = gold
-                }else{
-                    resultArray[0] = gold
-                }
+    //8.10
+    func thirdMax(_ nums: [Int]) -> Int {
+        
+        var first: Int = Int(Int64.min)
+        var second: Int = Int(Int64.min)
+        var third: Int = Int(Int64.min)
+        
+        for num in nums {
+            if (num > first) {
+                third = second
+                second = first
+                first = num
+            }else if(num > second && num < first) {
                 
-                buy = prices[i]
-                saril = buy
+                third = second
+                
+                second = num
+            }else if (num > third && num < second ){
+                third = num
             }
         }
         
-        if(saril > buy) {
-            let gold = saril - buy
-            let first = resultArray[0] + gold
-            let second = resultArray[1] + gold
-            if(first > second) {
-                resultArray[1] = gold
-            }else{
-                resultArray[0] = gold
-            }
-        }
-        sum = resultArray[0]  + resultArray[1]
-        return sum
+        return (third == Int(Int64.min)  || third == second) ?  first : third
     }
     
 }
