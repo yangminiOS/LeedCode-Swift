@@ -30,4 +30,8 @@ LeedCode 刷题
 
 14. func thirdMax(_ nums: [Int]) -> Int 
 
+15. func findDisappearedNumbers(_ nums: [Int]) -> [Int]
+
+16. func maximumProduct(_ nums: [Int]) -> Int
+
 ```
