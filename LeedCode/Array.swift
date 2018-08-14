@@ -302,4 +302,75 @@ class Array: NSObject {
         return (third == Int(Int64.min)  || third == second) ?  first : third
     }
     
+    //8.13
+    
+    func findDisappearedNumbers(_ nums: [Int]) -> [Int] {
+        
+        var array = nums
+        var result: [Int] = []
+        
+        for i in 0 ..< array.count {
+            let idx:Int = abs(nums[i]) - 1
+            //array[idx] = (array[idx] > 0) ? (-array[idx]) : array[idx]
+            array[idx] = (array[idx] > 0) ? (-array[idx]) : array[idx]
+            
+            
+        }
+        for j in 0 ..< array.count {
+            if(array[j] > 0) {
+                result.append(j + 1)
+            }
+        }
+        
+        return result
+    }
+    
+    func maximumProduct(_ nums: [Int]) -> Int {
+        var first: Int = Int(Int32.min)
+        var second: Int = Int(Int32.min)
+        var third: Int = Int(Int32.min)
+        
+        var min1: Int = 0
+        var min2: Int = 0
+        for item in nums {
+            
+            if(item >= first) {
+                third = second
+                second = first
+                first = item
+            }else if(item >= second && item < first) {
+                
+                third = second
+                second = item
+                
+            }else if(item >= third && item < second) {
+                
+                third  = item
+            }
+            
+            if( item < 0) {
+                if(min2 == 0 && min1 == 0) {
+                    min2 = item
+                }else if(item <= min2) {
+                    min1 = min2
+                    min2 = item
+                    
+                }else if(item <= min1 && item > min2) {
+                    min1 = item
+                }
+            }
+        }
+        print(first,second,third)
+        print( min1, min2)
+        var max = first * second * third
+        if(min2 < 0 && min1 < 0) {
+            let temp = first * min2 * min1
+            if(temp > max){
+                max = temp
+            }
+        }
+        
+        return max
+    }
+    
 }
