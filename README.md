@@ -34,4 +34,8 @@ LeedCode 刷题
 
 16. func maximumProduct(_ nums: [Int]) -> Int
 
+17. func findMaxConsecutiveOnes(_ nums: [Int]) -> Int
+
+18. func findMaxAverage(_ nums: [Int], _ k: Int) -> Double 
+
 ```
