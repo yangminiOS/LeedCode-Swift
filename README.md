@@ -26,7 +26,7 @@ LeedCode 刷题
 
 12. func maxProfit(_ prices: [Int]) -> Int
 
-13. func maxProfit2(_ prices: [Int]) -> Int
+13. func maxProfit2(_ prices: [Int]) -> Int //未完成
 
 14. func thirdMax(_ nums: [Int]) -> Int 
 
