@@ -9,9 +9,9 @@
 import Foundation
 
 let testArray = Array.init()
+let num1: [Int] = [0]
 
-var num1: [Int] = [-4,-3,-2,-1,60]
 
-print(testArray.maximumProduct(num1))
+print(testArray.reverse(1534236469))
 
 

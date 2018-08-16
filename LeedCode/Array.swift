@@ -373,4 +373,78 @@ class Array: NSObject {
         return max
     }
     
+    //8.14
+    
+    func findMaxConsecutiveOnes(_ nums: [Int]) -> Int {
+        var max = 0
+        var temp = 0
+        for itme in nums {
+            
+            if(itme == 1) {
+                temp += 1
+                
+                max = max > temp ? max : temp
+            }else {
+                temp = 0
+            }
+        }
+        print(max)
+        return max
+    }
+    
+    func findMaxAverage(_ nums: [Int], _ k: Int) -> Double {
+        if(k > nums.count) {
+            print("error")
+        }else{
+            print(k)
+        }
+        var max: Double = Double(Int64.min)
+        var sum = 0
+        for i in 0 ..< nums.count {
+            sum = sum + nums[i]
+            if(i > k - 1) {
+                sum = sum - nums[i - k]
+            }
+            let temp: Double = Double(sum) / Double(k)
+            if((i + 1) >= k && temp > max) {
+                max = temp
+            }
+        }
+        print(max)
+        return max
+    }
+    
+    //8.15
+    func findPairs(_ nums: [Int], _ k: Int) -> Int {
+        var diffCount = 0
+        var dict: [String: Int] = [:]
+        return diffCount
+    }
+    
+    func reverse(_ x: Int) -> Int {
+        var result = 0
+        if(x <= Int(Int32.min)) {
+            return result
+        }
+        var IntChar = x
+        IntChar = IntChar < 0 ? -IntChar : IntChar
+        
+        IntChar = IntChar % 10 == 0 ? IntChar / 10 : IntChar
+        
+        let intStr = "\(IntChar)"
+        
+        let resultStr = String(intStr.reversed())
+        
+        if(x < 0) {
+            
+            result = -1 * Int(resultStr)!
+        }else{
+            result = Int(resultStr)!
+        }
+        if(result > Int(Int32.max) || result < Int(Int32.min)) {
+            return 0
+        }
+        return result
+    }
+    
 }
