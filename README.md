@@ -38,4 +38,6 @@ LeedCode 刷题
 
 18. func findMaxAverage(_ nums: [Int], _ k: Int) -> Double 
 
+19. func reverse(_ x: Int) -> Int
+
 ```
