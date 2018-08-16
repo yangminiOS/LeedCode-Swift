@@ -26,12 +26,18 @@ LeedCode 刷题
 
 12. func maxProfit(_ prices: [Int]) -> Int
 
-13. func maxProfit2(_ prices: [Int]) -> Int
+13. func maxProfit2(_ prices: [Int]) -> Int //未完成
 
 14. func thirdMax(_ nums: [Int]) -> Int 
 
 15. func findDisappearedNumbers(_ nums: [Int]) -> [Int]
 
 16. func maximumProduct(_ nums: [Int]) -> Int
+
+17. func findMaxConsecutiveOnes(_ nums: [Int]) -> Int
+
+18. func findMaxAverage(_ nums: [Int], _ k: Int) -> Double 
+
+19. func reverse(_ x: Int) -> Int
 
 ```
