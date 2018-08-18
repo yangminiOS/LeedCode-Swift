@@ -40,4 +40,6 @@ LeedCode 刷题
 
 19. func reverse(_ x: Int) -> Int
 
+20. func arrayPairSum(_ nums: [Int]) -> Int
+
 ```
