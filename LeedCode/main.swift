@@ -9,9 +9,10 @@
 import Foundation
 
 let testArray = Array.init()
-let num1: [Int] = [0]
+let testString = Strings.init()
+let num1: [Int] = [1, 3, 1, 5, 4]
 
 
-print(testArray.reverse(1534236469))
+//testArray.findPairs(num1, 0)
 
-
+print(testString.isPalindrome(101))

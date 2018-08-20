@@ -418,6 +418,32 @@ class Array: NSObject {
     func findPairs(_ nums: [Int], _ k: Int) -> Int {
         var diffCount = 0
         var dict: [String: Int] = [:]
+        for num in nums {
+            var addCount = 0
+            var redCount = 0
+            var addKey = dict["\(num + k)"]
+            var redKey = dict["\(num - k)"]
+            
+            while ((addKey != nil  || redKey != nil)   && k != 0) {
+                if let add = addKey {
+                    addKey = dict["\(add + k)"]//add + k
+                    addCount += 1
+                }
+                if let red = redKey {
+                    redKey = dict["\(red - k)"]//red - k
+                    redCount += 1
+                }
+            }
+             dict["\(num)"] = num
+            let temp = addCount > redCount ? addCount : redCount
+            
+            diffCount = temp > diffCount ? temp : diffCount
+            
+        }
+        if(k == 0) {
+            diffCount = nums.count - dict.count
+        }
+        print(diffCount)
         return diffCount
     }
     
@@ -446,5 +472,7 @@ class Array: NSObject {
         }
         return result
     }
+    
+ 
     
 }
