@@ -43,7 +43,7 @@ LeedCode 刷题
 20. func arrayPairSum(_ nums: [Int]) -> Int
 
 ```
-#### 第二部分 字符串
+#### 第二部分 字符串操作
 
 ```
 func isPalindrome(_ x: Int) -> Bool
