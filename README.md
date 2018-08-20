@@ -1,6 +1,6 @@
 # LeedCode-Swift
 LeedCode 刷题
-* 第一部分 数组
+#### 第一部分 数组
 ```
 1. func twoSun(_ nums: [Int], _ target: Int) ->[Int]
 
@@ -42,4 +42,9 @@ LeedCode 刷题
 
 20. func arrayPairSum(_ nums: [Int]) -> Int
 
+```
+#### 第二部分 字符串
+
+```
+func isPalindrome(_ x: Int) -> Bool
 ```
