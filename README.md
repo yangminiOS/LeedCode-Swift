@@ -46,5 +46,7 @@ LeedCode 刷题
 #### 第二部分 字符串操作
 
 ```
-func isPalindrome(_ x: Int) -> Bool
+1. func isPalindrome(_ x: Int) -> Bool
+
+2. func isPalindrome(_ x: Int) -> Bool
 ```
