@@ -49,4 +49,6 @@ LeedCode 刷题
 1. func isPalindrome(_ x: Int) -> Bool
 
 2. func romanToInt(_ s: String) -> Int
+
+3.isValid(_ s: String) -> Bool
 ```
