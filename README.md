@@ -51,4 +51,6 @@ LeedCode 刷题
 2. func romanToInt(_ s: String) -> Int
 
 3.isValid(_ s: String) -> Bool
+
+func strStr(_ haystack: String, _ needle: String) -> Int
 ```
