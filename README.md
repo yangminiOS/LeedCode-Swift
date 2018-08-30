@@ -1,4 +1,4 @@
-# LeedCode-Swift
+### LeedCode-Swift
 LeedCode 刷题
 #### 第一部分 数组
 ```
@@ -46,5 +46,13 @@ LeedCode 刷题
 #### 第二部分 字符串操作
 
 ```
-func isPalindrome(_ x: Int) -> Bool
+1. func isPalindrome(_ x: Int) -> Bool
+
+2. func romanToInt(_ s: String) -> Int
+
+3.isValid(_ s: String) -> Bool
+
+3.func strStr(_ haystack: String, _ needle: String) -> Int
+
+4.func lengthOfLongestSubstring(_ s: String) -> Int
 ```
