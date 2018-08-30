@@ -10,9 +10,11 @@ import Foundation
 
 let testArray = Array.init()
 let testString = Strings.init()
-let num1: [Int] = [1, 3, 1, 5, 4]
+let num1: [String] =  ["hello","ll"]
+
+let str = "abba"
 
 
 //testArray.findPairs(num1, 0)
 
-print(testString.isPalindrome(101))
+print(testString.lengthOfLongestSubstring(str))
