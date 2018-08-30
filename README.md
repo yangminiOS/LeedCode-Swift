@@ -53,4 +53,6 @@ LeedCode 刷题
 3.isValid(_ s: String) -> Bool
 
 3.func strStr(_ haystack: String, _ needle: String) -> Int
+
+4.func lengthOfLongestSubstring(_ s: String) -> Int
 ```
