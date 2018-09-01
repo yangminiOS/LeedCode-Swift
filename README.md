@@ -55,4 +55,6 @@ LeedCode 刷题
 3.func strStr(_ haystack: String, _ needle: String) -> Int
 
 4.func lengthOfLongestSubstring(_ s: String) -> Int//有待优化
+
+5. func longestPalindrome(_ s: String) -> String
 ```
