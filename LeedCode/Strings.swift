@@ -164,7 +164,6 @@ class Strings: NSObject {
         var strDic: [String: Int] = [:]
         var temp = 0
         var index = 0
-        
         for char in s {
             index += 1
             let charStr = "\(char)"
@@ -183,6 +182,12 @@ class Strings: NSObject {
             }
         }
         return sum
+    }
+    
+    //9.1
+    func longestPalindrome(_ s: String) -> String {
+        
+        return ""
     }
     
 }
