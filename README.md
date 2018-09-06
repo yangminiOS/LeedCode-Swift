@@ -57,4 +57,6 @@ LeedCode 刷题
 4.func lengthOfLongestSubstring(_ s: String) -> Int//有待优化
 
 5. func longestPalindrome(_ s: String) -> String
+
+6. func maxArea(_ height: [Int]) -> Int
 ```
