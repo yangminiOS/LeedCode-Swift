@@ -59,4 +59,6 @@ LeedCode 刷题
 5. func longestPalindrome(_ s: String) -> String
 
 6. func maxArea(_ height: [Int]) -> Int
+
+7. func intToRoman(_ num: Int) -> String
 ```
