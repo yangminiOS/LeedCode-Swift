@@ -62,3 +62,9 @@ LeedCode 刷题
 
 7. func intToRoman(_ num: Int) -> String
 ```
+
+#### 第三部分  链表
+```
+func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? 
+```
+
