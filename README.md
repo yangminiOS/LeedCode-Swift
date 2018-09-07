@@ -54,7 +54,20 @@ LeedCode 刷题
 
 3.func strStr(_ haystack: String, _ needle: String) -> Int
 
-4.func lengthOfLongestSubstring(_ s: String) -> Int//有待优化
+4.func lengthOfLongestSubstring(_ s: String) -> Int//未完成
 
 5. func longestPalindrome(_ s: String) -> String
+
+6. func maxArea(_ height: [Int]) -> Int
+
+7. func intToRoman(_ num: Int) -> String
 ```
+
+#### 第三部分  链表
+```
+//自己运行很好 但是在线编译报错  很奇怪
+func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? 
+
+func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode?
+```
+
