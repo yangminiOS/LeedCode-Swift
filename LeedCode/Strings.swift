@@ -190,6 +190,103 @@ class Strings: NSObject {
         return ""
     }
     
+    //9.6
+    func maxArea(_ height: [Int]) -> Int {
+        var maxS = 0
+        var left = 0
+        var right = height.count - 1
+        while left < right {
+            let width = min(height[left], height[right])
+            
+            maxS = max(maxS, (width * (right - left)))
+            
+            if (height[left] < height[right]) {
+                left += 1
+            }else {
+                right -=  1
+            }
+        }
+        return maxS
+    }
+    
+    //9.7
+    func intToRoman(_ num: Int) -> String {
+        
+        let intStr = "\(num)"
+        var result = ""
+        for (index, vaule) in intStr.enumerated() {
+            var posStr = ""
+            let pos = intStr.count - index
+            
+            let number = Int("\(vaule)")!
+            
+            switch pos {
+            case 4:
+                for _ in 0 ..< number{
+                    posStr.append("M")
+                }
+            case 3:
+                if(number == 4) {
+                    posStr = "CD"
+                }else if(number == 9) {
+                    posStr = "CM"
+                }else if(number >= 5) {
+                    var temp = ""
+                    for _ in 0 ..< number - 5 {
+                        temp.append("C")
+                    }
+                    posStr = "D" + temp
+                
+                }else{
+                    for _ in 0 ..< number {
+                        posStr.append("C")
+                    }
+                }
+            case 2:
+                if(number == 4) {
+                    posStr = "XL"
+                }else if(number == 9) {
+                    posStr = "XC"
+                }else if(number >= 5) {
+                    var temp = ""
+                    for _ in 0 ..< number - 5 {
+                        temp.append("X")
+                    }
+                    posStr = "L" + temp
+                    
+                }else{
+                    for _ in 0 ..< number {
+                        posStr.append("X")
+                    }
+                }
+            case 1:
+                if(number == 4) {
+                    posStr = "IV"
+                }else if(number == 9) {
+                    posStr = "IX"
+                }else if(number >= 5) {
+                    var temp = ""
+                    for _ in 0 ..< number - 5 {
+                        temp.append("I")
+                    }
+                    posStr = "V" + temp
+                    
+                }else{
+                    for _ in 0 ..< number {
+                        posStr.append("I")
+                    }
+                }
+            default:
+                print("eror")
+            }
+            
+            result.append(posStr)
+            
+        }
+        
+        return result
+    }
+    
 }
 
 

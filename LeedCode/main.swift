@@ -10,11 +10,34 @@ import Foundation
 
 let testArray = Array.init()
 let testString = Strings.init()
-let num1: [String] =  ["hello","ll"]
+let linked = Linked()
+let num1: [Int] =  [1,8,6,2,5,4,8,3,7]
 
-let str = "abba"
+let str = "MMMMMCMXXII"
 
 
 //testArray.findPairs(num1, 0)
+//MMMMMCMXXII
+//print(testString.maxArea(num1))
 
-print(testString.lengthOfLongestSubstring(str))
+//print(testString.intToRoman(8))
+
+let link1 = ListNode.init(1)
+let link2 = ListNode.init(2)
+let link3 = ListNode.init(3)
+let link4 = ListNode.init(4)
+let link5 = ListNode.init(5)
+
+//link1.next = link2
+//link2.next = link3
+//link3.next = link4
+//link4.next = link5
+
+let result =  linked.removeNthFromEnd(link1, 1)
+
+var temp = result
+
+while temp != nil{
+    print(temp?.val )
+    temp = temp?.next
+}
