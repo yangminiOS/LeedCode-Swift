@@ -65,6 +65,9 @@ LeedCode 刷题
 
 #### 第三部分  链表
 ```
+//自己运行很好 但是在线编译报错  很奇怪
 func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? 
+
+func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode?
 ```
 
