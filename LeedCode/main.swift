@@ -33,11 +33,8 @@ let link5 = ListNode.init(5)
 //link3.next = link4
 //link4.next = link5
 
-let result =  linked.removeNthFromEnd(link1, 1)
+let temp = linked.generateParenthesis(2)
 
-var temp = result
-
-while temp != nil{
-    print(temp?.val )
-    temp = temp?.next
+for item in temp {
+    print(item)
 }

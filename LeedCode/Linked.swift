@@ -83,4 +83,38 @@ class Linked: NSObject {
         }
         return head.next
     }
+    
+    func generateParenthesis(_ n: Int) -> [String] {
+        var list: [String] = []
+        let temp = ""
+        generateDFS(left: n, right: n, temp: temp, list: &list)
+        return list
+    }
+    
+    func generateDFS(left: Int, right: Int, temp: String, list: inout [String]) {
+        
+        if(left > right) {
+            return
+        }
+        
+        if(left == 0 && right == 0) {
+            list.append(temp)
+        }else{
+            
+            if left > 0 {
+                generateDFS(left: left - 1, right: right, temp: temp +  "(", list: &list)
+            }
+            
+            if right > 0 {
+                
+                generateDFS(left: left, right: right - 1, temp: temp + ")", list: &list)
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
 }
