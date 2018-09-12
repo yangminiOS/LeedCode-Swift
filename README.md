@@ -68,7 +68,9 @@ LeedCode 刷题
 //在自己编译器运行没有问题 ，但是在线编译器编译不通过
 1. func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? 
 
-1. func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode?
+2. func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode?
+
+3. func swapPairs(_ head: ListNode?) -> ListNode? 
 
 ```
 
