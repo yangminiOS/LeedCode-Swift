@@ -61,6 +61,8 @@ LeedCode 刷题
 6. func maxArea(_ height: [Int]) -> Int
 
 7. func intToRoman(_ num: Int) -> String
+
+8. func countAndSay(_ n: Int) -> String
 ```
 
 #### 第三部分  链表
