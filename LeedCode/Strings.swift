@@ -287,6 +287,22 @@ class Strings: NSObject {
         return result
     }
     
+    
+    //9.12
+    func countAndSay(_ n: Int) -> String {
+        var resultStr = "1"
+        if(n == 1) {
+            return resultStr
+        }
+        
+        for i in 1 ..< n{
+            
+        }
+        
+        
+        return resultStr
+    }
+    
 }
 
 

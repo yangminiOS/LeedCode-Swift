@@ -112,9 +112,77 @@ class Linked: NSObject {
         }
     }
     
+    //9.12
+    
+    func swapPairs(_ head: ListNode?) -> ListNode? {
+        
+        let newHead: ListNode?  = ListNode.init(-1)
+        newHead?.next = head
+        
+        var pre = newHead
+        var curr = pre?.next
+        var next = curr?.next
+        
+        while curr != nil {
+            
+            pre?.next = next
+            curr?.next = next?.next
+            next?.next = curr
+            
+            pre = curr
+            curr = pre?.next
+            next = curr?.next
+        }
+        
+        return newHead?.next
+    }
     
     
+    //25. k个一组翻转链表
+    func reverseKGroup(_ head: ListNode?, _ k: Int) -> ListNode? {
+        
+        var count = k
+        
+        let newHead: ListNode? = ListNode.init(-1)
+        newHead?.next = head
+        
+        var left = newHead
+        
+        var end = theEnd(newHead, k)
     
+        while end != nil {
+            let temp = left?.next
+            
+            let fir = left?.next
+            let sec = fir?.next
+            let thi = sec?.next
+            
+            //while (fir != end)
+            
+            
+            
+            
+            temp?.next = end?.next
+            left?.next = end
+            left = temp
+            end = theEnd(left, k)
+        }
+        
+        return newHead?.next
+    }
+    
+    func theEnd(_ head: ListNode?, _ k: Int) -> ListNode? {
+        var newHead = head
+        var count = k
+        while count > 0 {
+            
+            newHead = newHead?.next
+            
+            count -= 1
+        }
+        
+        return newHead
+    }
     
     
 }
