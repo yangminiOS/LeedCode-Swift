@@ -33,8 +33,4 @@ let link5 = ListNode.init(5)
 //link3.next = link4
 //link4.next = link5
 
-let temp = linked.generateParenthesis(2)
-
-for item in temp {
-    print(item)
-}
+print(testString.countAndSay(5))

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D07073D21147666001EC071 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07073C21147666001EC071 /* main.swift */; };
 		3D070744211476BA001EC071 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D070743211476BA001EC071 /* Array.swift */; };
+		3D7054F82150E9F300E3020C /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7054F72150E9F300E3020C /* DFS.swift */; };
 		3D7B93AB214120570055E3FA /* Linked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B93AA214120570055E3FA /* Linked.swift */; };
 		3D8D7496212A653F0043E336 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D7495212A653F0043E336 /* Strings.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		3D07073921147666001EC071 /* LeedCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeedCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D07073C21147666001EC071 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3D070743211476BA001EC071 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		3D7054F72150E9F300E3020C /* DFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
 		3D7B93AA214120570055E3FA /* Linked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linked.swift; sourceTree = "<group>"; };
 		3D8D7495212A653F0043E336 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				3D070743211476BA001EC071 /* Array.swift */,
 				3D8D7495212A653F0043E336 /* Strings.swift */,
 				3D7B93AA214120570055E3FA /* Linked.swift */,
+				3D7054F72150E9F300E3020C /* DFS.swift */,
 			);
 			path = LeedCode;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 				3D07073D21147666001EC071 /* main.swift in Sources */,
 				3D7B93AB214120570055E3FA /* Linked.swift in Sources */,
 				3D070744211476BA001EC071 /* Array.swift in Sources */,
+				3D7054F82150E9F300E3020C /* DFS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

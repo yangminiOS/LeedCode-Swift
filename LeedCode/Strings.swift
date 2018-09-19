@@ -288,18 +288,34 @@ class Strings: NSObject {
     }
     
     
-    //9.12
+    //9.17
     func countAndSay(_ n: Int) -> String {
         var resultStr = "1"
         if(n == 1) {
             return resultStr
         }
         
-        for i in 1 ..< n{
+        for index in 2 ... n {
+            var firStr = "\(resultStr.first!)"
+            var tempResult = ""
+            var tempCount = 0
+            for (index, char) in resultStr.enumerated() {
+                let temp = "\(char)"
+                if(temp != firStr) {
+                    tempResult = tempResult + "\(tempCount)" + firStr
+                    firStr = temp
+                    tempCount = 1
+                }else{
+                    tempCount += 1
+                }
+            }
             
+            tempResult = tempResult + "\(tempCount)" + firStr
+            
+            resultStr = tempResult
+            
+            print("n= \(index) ;;; \(resultStr)" )
         }
-        
-        
         return resultStr
     }
     
