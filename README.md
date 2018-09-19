@@ -61,6 +61,8 @@ LeedCode 刷题
 6. func maxArea(_ height: [Int]) -> Int
 
 7. func intToRoman(_ num: Int) -> String
+
+8. func countAndSay(_ n: Int) -> String
 ```
 
 #### 第三部分  链表
@@ -73,4 +75,9 @@ LeedCode 刷题
 3. func swapPairs(_ head: ListNode?) -> ListNode? 
 
 ```
+#### 第三部分  DFS
+```
+1. func generateParenthesis(_ n: Int) -> [String]
 
+2. func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]]
+```
