@@ -77,5 +77,7 @@ LeedCode 刷题
 ```
 #### 第三部分  DFS
 ```
+1. func generateParenthesis(_ n: Int) -> [String]
 
+2. func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]]
 ```
