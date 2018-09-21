@@ -82,4 +82,6 @@ LeedCode 刷题
 2. func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]]
 
 3. func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]]
+
+4. func permute(_ nums: [Int]) -> [[Int]]
 ```
