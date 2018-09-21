@@ -80,4 +80,6 @@ LeedCode 刷题
 1. func generateParenthesis(_ n: Int) -> [String]
 
 2. func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]]
+
+3. func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]]
 ```
