@@ -42,6 +42,8 @@ LeedCode 刷题
 
 20. func arrayPairSum(_ nums: [Int]) -> Int
 
+21. func groupAnagrams(_ strs: [String]) -> [[String]]
+
 ```
 #### 第二部分 字符串操作
 
