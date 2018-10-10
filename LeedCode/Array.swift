@@ -474,6 +474,34 @@ class Array: NSObject {
     }
     
     
+    
+    //9.22
+    func groupAnagrams(_ strs: [String]) -> [[String]] {
+        
+        var anagrams: [[String]] = []
+        
+        var dit: [String: [String]] = [:]
+        
+        for item in strs {
+            
+            let sortKey = "\(item.sorted())"
+            if dit[sortKey] == nil {
+                dit[sortKey] = [item]
+            }else {
+                
+                var strArr = dit[sortKey]!
+                strArr.append(item)
+                
+                dit[sortKey] = strArr
+            }
+            
+        }
+        for (key, vaule) in dit {
+            anagrams.append(vaule)
+        }
+        
+        return anagrams
+    }
    
     
  

@@ -11,26 +11,9 @@ import Foundation
 let testArray = Array.init()
 let testString = Strings.init()
 let linked = Linked()
-let num1: [Int] =  [1,8,6,2,5,4,8,3,7]
 
-let str = "MMMMMCMXXII"
+let num1 = "401716832807512840963"
+let num2 = "167141802233061013023557397451289113296441069"
 
 
-//testArray.findPairs(num1, 0)
-//MMMMMCMXXII
-//print(testString.maxArea(num1))
-
-//print(testString.intToRoman(8))
-
-let link1 = ListNode.init(1)
-let link2 = ListNode.init(2)
-let link3 = ListNode.init(3)
-let link4 = ListNode.init(4)
-let link5 = ListNode.init(5)
-
-//link1.next = link2
-//link2.next = link3
-//link3.next = link4
-//link4.next = link5
-
-print(testString.countAndSay(5))
+print(testString.multiply(num1, num2))

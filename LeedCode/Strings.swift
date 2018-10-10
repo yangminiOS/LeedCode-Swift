@@ -319,6 +319,71 @@ class Strings: NSObject {
         return resultStr
     }
     
+    
+    
+    func multiply(_ num1: String, _ num2: String) -> String {
+        
+        if(String(num1.first!) == "0" || String(num2.first!) == "0") {
+            
+            return "0"
+        }
+        
+        var sumStr = ""
+        
+        var multArray = [Int](repeating: 0, count: num1.count + num2.count)
+        
+        for (index1, item1) in num1.enumerated() {
+            
+            for (index2, item2) in num2.enumerated() {
+                let itemVaule1 = Int("\(item1)")!
+                let itemVaule2 = Int("\(item2)")!
+                
+                multArray[index1 + index2] = itemVaule1 * itemVaule2 +  multArray[index1 + index2]
+                
+            }
+        }
+        var res = 0
+        
+        for inde in 0 ..< multArray.count {
+            
+            
+            let strInt = multArray[multArray.count - inde - 1]
+            
+            let temp = (strInt  + res) % 10
+            
+            sumStr += "\(temp)"
+            
+            res = (strInt  + res) / 10
+            
+        }
+        
+        if res > 0 {
+            
+            sumStr += "\(res)"
+        }
+        
+        if let first = sumStr.first {
+            if("\(first)" == "0") {
+                sumStr.removeFirst()
+            }
+        }
+        return String(sumStr.reversed())
+    }
+    
+    
+    func addBinary(_ a: String, _ b: String) -> String {
+        
+        var sum = ""
+        
+        let num1 = String(Int(a)!, radix: 2)
+        
+        let num2 = String(Int(b)!, radix: 2)
+        
+        
+        
+        return sum
+    }
+   
 }
 
 
