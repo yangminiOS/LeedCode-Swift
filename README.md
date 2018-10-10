@@ -92,6 +92,8 @@ LeedCode 刷题
 5.  func climbStairs(_ n: Int) -> Int  // DFS超时
 
 5. func climbStairs1(_ n: Int) -> Int //递归超时
+
+5. func climbStairs2(_ n: Int) -> Int 
 ```
 
 ### 第四部分 二分法
