@@ -89,3 +89,13 @@ LeedCode 刷题
 
 4. func permute(_ nums: [Int]) -> [[Int]]
 ```
+
+### 第四部分 二分法
+
+```
+1. func mySqrt(_ x: Int) -> Int
+
+
+
+```
+
