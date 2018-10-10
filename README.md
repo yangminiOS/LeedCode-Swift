@@ -42,6 +42,8 @@ LeedCode 刷题
 
 20. func arrayPairSum(_ nums: [Int]) -> Int
 
+21. func groupAnagrams(_ strs: [String]) -> [[String]]
+
 ```
 #### 第二部分 字符串操作
 
@@ -63,6 +65,8 @@ LeedCode 刷题
 7. func intToRoman(_ num: Int) -> String
 
 8. func countAndSay(_ n: Int) -> String
+
+9. func multiply(_ num1: String, _ num2: String) -> String
 ```
 
 #### 第三部分  链表
@@ -80,4 +84,8 @@ LeedCode 刷题
 1. func generateParenthesis(_ n: Int) -> [String]
 
 2. func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]]
+
+3. func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]]
+
+4. func permute(_ nums: [Int]) -> [[Int]]
 ```
