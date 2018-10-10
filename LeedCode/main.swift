@@ -11,9 +11,8 @@ import Foundation
 let testArray = Array.init()
 let testString = Strings.init()
 let linked = Linked()
+let dic = Dichotomy()
+let dfs = DFS()
 
-let num1 = "401716832807512840963"
-let num2 = "167141802233061013023557397451289113296441069"
+print(dfs.climbStairs2(6))
 
-
-print(testString.multiply(num1, num2))

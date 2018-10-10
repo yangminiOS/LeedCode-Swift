@@ -204,6 +204,71 @@ class DFS: NSObject {
             
         }
     }
+    
+    //10.10
+    
+    func climbStairs(_ n: Int) -> Int {
+        
+        var count = 0
+        
+        climbStairsDFS(count: &count, N: n)
+        
+        return count
+    }
+    
+    func climbStairsDFS( count: inout Int, N: Int) {
+        let temp = N
+        
+        if(temp < 0) {
+            
+            return
+        }
+        
+        if(temp == 0) {
+            count = count + 1
+        }
+        
+       
+        
+        if(temp - 1 >= 0) {
+            
+            climbStairsDFS(count: &count, N: (temp - 1))
+        }
+        
+        if(temp - 2 >= 0) {
+            
+            climbStairsDFS(count: &count, N: (temp - 2))
+        }
+    }
+    
+    func climbStairs1(_ n: Int) -> Int {
+        
+        if(n == 1){
+            return 1
+        }else if(n == 2) {
+            return 2
+        }else{
+           return climbStairs1(n - 1) +  climbStairs1(n - 2)
+        }
+    }
   
+    func climbStairs2(_ n: Int) -> Int {
+        if(n == 1){
+            return 1
+        }else if(n == 2) {
+            return 2
+        }else{
+            var ans = [Int](repeating: 0, count: n)
+            
+            ans[0] = 1
+            ans[1] = 2
+            for i in 2 ..< n {
+                ans[i] = ans[i - 1] + ans[i - 2]
+            }
+            
+            return ans[n - 1]
+        }
+        
+    }
     
 }
