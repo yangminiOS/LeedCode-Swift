@@ -89,7 +89,9 @@ LeedCode 刷题
 
 4. func permute(_ nums: [Int]) -> [[Int]]
 
-5.  func climbStairs(_ n: Int) -> Int  //超时
+5.  func climbStairs(_ n: Int) -> Int  // DFS超时
+
+5. func climbStairs1(_ n: Int) -> Int //递归超时
 ```
 
 ### 第四部分 二分法
