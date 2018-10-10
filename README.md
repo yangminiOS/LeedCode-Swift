@@ -88,6 +88,8 @@ LeedCode 刷题
 3. func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]]
 
 4. func permute(_ nums: [Int]) -> [[Int]]
+
+5.  func climbStairs(_ n: Int) -> Int  //超时
 ```
 
 ### 第四部分 二分法
