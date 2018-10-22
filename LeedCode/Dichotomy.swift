@@ -41,4 +41,22 @@ class Dichotomy: NSObject {
         return right
     }
     
+    /*
+     异或的特性：
+     1.恒定律：A ^ 0 = A
+     2.归零率：A ^ A = 0
+     3.交换律：A ^ B = B ^ A
+     4.结合律：(A ^ B) ^ C = A ^ (B ^ C)
+     */
+    
+    func singleNumber(_ nums: [Int]) -> Int {
+        
+        var result = 0
+        
+        for item in nums {
+            result = result ^ item
+        }
+        return result
+    }
+    
 }

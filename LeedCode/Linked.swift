@@ -158,4 +158,23 @@ class Linked: NSObject {
     }
     
     
+    //10.22
+    func hasCycle(_ head: ListNode?) ->Bool {
+        
+        var slow = head
+        var fast = head
+        
+        while (slow != nil && fast != nil) {
+            
+            slow = slow?.next
+            
+            fast = fast?.next?.next
+            
+            if(fast === slow) {
+                return true
+            }
+        }
+        
+        return false
+    }
 }

@@ -383,6 +383,33 @@ class Strings: NSObject {
         
         return sum
     }
+    
+    
+    //MARK: ******10.22
+    
+    func isPalindrome(_ s: String) -> Bool {
+        let str = s
+        var tempString = ""
+        for item in str {
+            let charStr = "\(item)"
+            
+            if((charStr.rangeOfCharacter(from: CharacterSet.alphanumerics.inverted)) != nil) {
+                
+                tempString = tempString + charStr
+            }
+        }
+        
+        tempString = tempString.localizedLowercase
+        
+        let huiwen = String(tempString.reversed())
+        
+        
+        
+        print("temp: \(tempString):::::huiwen:\(huiwen)")
+        
+        return huiwen == tempString
+    }
+
    
 }
 
