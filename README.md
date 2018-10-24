@@ -78,6 +78,8 @@ LeedCode 刷题
 
 3. func swapPairs(_ head: ListNode?) -> ListNode? 
 
+4. func hasCycle(_ head: ListNode?) ->Bool
+
 ```
 #### 第三部分  DFS
 ```
