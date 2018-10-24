@@ -67,6 +67,8 @@ LeedCode 刷题
 8. func countAndSay(_ n: Int) -> String
 
 9. func multiply(_ num1: String, _ num2: String) -> String
+
+10. func isPalindrome(_ s: String) -> Bool
 ```
 
 #### 第三部分  链表
