@@ -44,6 +44,8 @@ LeedCode 刷题
 
 21. func groupAnagrams(_ strs: [String]) -> [[String]]
 
+22. func singleNumber(_ nums: [Int]) -> Int
+
 ```
 #### 第二部分 字符串操作
 
@@ -69,6 +71,8 @@ LeedCode 刷题
 9. func multiply(_ num1: String, _ num2: String) -> String
 
 10. func isPalindrome(_ s: String) -> Bool
+
+
 ```
 
 #### 第三部分  链表
