@@ -44,6 +44,8 @@ LeedCode 刷题
 
 21. func groupAnagrams(_ strs: [String]) -> [[String]]
 
+22. func singleNumber(_ nums: [Int]) -> Int
+
 ```
 #### 第二部分 字符串操作
 
@@ -67,6 +69,10 @@ LeedCode 刷题
 8. func countAndSay(_ n: Int) -> String
 
 9. func multiply(_ num1: String, _ num2: String) -> String
+
+10. func isPalindrome(_ s: String) -> Bool
+
+
 ```
 
 #### 第三部分  链表
@@ -77,6 +83,8 @@ LeedCode 刷题
 2. func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode?
 
 3. func swapPairs(_ head: ListNode?) -> ListNode? 
+
+4. func hasCycle(_ head: ListNode?) ->Bool
 
 ```
 #### 第三部分  DFS
