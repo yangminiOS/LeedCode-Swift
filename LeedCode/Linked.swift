@@ -21,6 +21,21 @@ public class ListNode {
     
 }
 
+public class TreeNode {
+    
+    public var val: Int
+    
+    public var left: TreeNode?
+    public var right: TreeNode?
+    
+    public init(_ val: Int) {
+        self.val = val
+        self.left = nil
+        self.right = nil
+    }
+    
+}
+
 
 class Linked: NSObject {
     
@@ -176,5 +191,17 @@ class Linked: NSObject {
         }
         
         return false
+    }
+    
+    //  10.26
+    func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
+        
+        if (p != nil  && q != nil) {
+            return ((p?.val == q?.val) && (isSameTree( p?.left, q?.left) && isSameTree(p?.right, q?.right)))
+        }else if(p == nil && q == nil) {
+            return true
+        }else{
+            return false
+        }
     }
 }
