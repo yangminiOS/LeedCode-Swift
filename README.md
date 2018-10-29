@@ -86,6 +86,8 @@ LeedCode 刷题
 
 4. func hasCycle(_ head: ListNode?) ->Bool
 
+5. func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool
+
 ```
 #### 第三部分  DFS
 ```
