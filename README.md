@@ -75,7 +75,7 @@ LeedCode 刷题
 
 ```
 
-#### 第三部分  链表
+#### 第三部分  链表操作
 ```
 //在自己编译器运行没有问题 ，但是在线编译器编译不通过
 1. func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? 
