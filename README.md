@@ -88,6 +88,8 @@ LeedCode 刷题
 
 5. func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool
 
+6. func isSymmetric(_ root: TreeNode?) -> Bool
+
 ```
 #### 第三部分  DFS
 ```
