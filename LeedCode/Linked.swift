@@ -204,4 +204,21 @@ class Linked: NSObject {
             return false
         }
     }
+    
+    //  11.4
+    func isSymmetric(_ root: TreeNode?) -> Bool {
+        
+        if(root == nil) { return true}
+        
+        return symmetric(root?.left, root?.right)
+    }
+    
+    func  symmetric(_ left: TreeNode?, _ right: TreeNode?) ->Bool {
+        
+        if(left == nil && right == nil){return true}
+        
+        if(left == nil || right == nil){return false}
+        
+        return ((left?.val == right?.val) &&  symmetric(left?.left, right?.right) && symmetric(left?.right, right?.left))
+    }
 }
