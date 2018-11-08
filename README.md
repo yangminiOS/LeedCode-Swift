@@ -90,6 +90,8 @@ LeedCode 刷题
 
 6. func isSymmetric(_ root: TreeNode?) -> Bool
 
+7. func maxDepth(_ root: TreeNode?) -> Int
+
 ```
 #### 第三部分  DFS
 ```
