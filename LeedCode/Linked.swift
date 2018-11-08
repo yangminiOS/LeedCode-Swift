@@ -221,4 +221,22 @@ class Linked: NSObject {
         
         return ((left?.val == right?.val) &&  symmetric(left?.left, right?.right) && symmetric(left?.right, right?.left))
     }
+    
+    func maxDepth(_ root: TreeNode?) -> Int {
+        
+        var max = 0
+        
+        if(root != nil) {
+            max += 1
+            
+            let left = maxDepth(root?.left)
+            
+            let  right = maxDepth(root?.right)
+            
+            max += left > right ? left : right
+            
+        }
+        
+        return max
+    }
 }
