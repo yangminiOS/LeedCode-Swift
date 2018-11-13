@@ -46,6 +46,8 @@ LeedCode 刷题
 
 22. func singleNumber(_ nums: [Int]) -> Int
 
+23. func twoSum(_ numbers: [Int], _ target: Int) -> [Int]
+
 ```
 #### 第二部分 字符串操作
 
