@@ -95,6 +95,9 @@ LeedCode 刷题
 7. func maxDepth(_ root: TreeNode?) -> Int
 
 8 func levelOrderBottom(_ root: TreeNode?) -> [[Int]]
+
+// 不支持Swift
+9. public ListNode getIntersectionNode(ListNode headA, ListNode headB)
 ```
 #### 第三部分  DFS
 ```
