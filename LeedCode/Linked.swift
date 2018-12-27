@@ -239,4 +239,75 @@ class Linked: NSObject {
         
         return max
     }
+    
+    func levelOrderBottom(_ root: TreeNode?) -> [[Int]] {
+        
+        var result = [[Int]]()
+        
+        if(root == nil){return result}
+        
+        var rowQueue: [TreeNode] = [root!]
+        
+        while rowQueue.count > 0 {
+            
+            var tempTree = [TreeNode]()
+            
+            var tempInt = [Int]()
+            
+            for item in rowQueue {
+                
+                tempInt.append(item.val)
+                
+                if(item.left != nil){tempTree.append(item.left!)}
+                
+                if(item.right != nil) {tempTree.append(item.right!)}
+                
+            }
+            
+            rowQueue.removeAll()
+            rowQueue += tempTree
+            result.insert(tempInt, at: 0)
+            
+        }
+        
+        return result
+    }
+    
+    //MARK: ******不支持  swift  11.12
+    
+    /*
+     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+     if(headA == null || headB == null)
+     return null;
+     ListNode tHeadA = headA,tHeadB = headB;
+     int countA = countLength(headA);
+     int countB = countLength(headB);
+     if(countA > countB){
+     for(int i=0;i<countA - countB;i++)
+     tHeadA = tHeadA.next;
+     }else{
+     for(int i=0;i<countB - countA;i++)
+     tHeadB = tHeadB.next;
+     }
+     while(tHeadA != null && tHeadB != null){
+     if(tHeadA==tHeadB)
+     return tHeadA;
+     else{
+     tHeadA = tHeadA.next;
+     tHeadB = tHeadB.next;
+     }
+     }
+     return null;
+     }
+     public int countLength(ListNode head){
+     int num = 0;
+     while(head != null){
+     num++;
+     head = head.next;
+     }
+     return num;
+     }
+     */
+    
+    
 }

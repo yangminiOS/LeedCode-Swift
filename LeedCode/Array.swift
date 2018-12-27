@@ -504,6 +504,27 @@ class Array: NSObject {
     }
    
     
- 
+    //MARK: ******11.12
+    func twoSum(_ numbers: [Int], _ target: Int) -> [Int]{
+        
+        var result = [Int]()
+        
+        var dict: [Int: Int] = [:]
+        
+        for (index, item) in numbers.enumerated() {
+            
+            let vaule1 = target - item
+            
+            if let index1 = dict[vaule1] {
+                result.append(index1 + 1)
+                result.append(index + 1)
+            }else {
+                dict[item] = index
+            }
+        }
+        
+        
+        return result
+    }
     
 }

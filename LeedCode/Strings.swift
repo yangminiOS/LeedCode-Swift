@@ -410,6 +410,17 @@ class Strings: NSObject {
         return huiwen == tempString
     }
 
+    
+    func convertToTitle(_ n: Int) -> String {
+        
+        var result = ""
+        
+        
+        
+        
+        return result
+        
+    }
    
 }
 
