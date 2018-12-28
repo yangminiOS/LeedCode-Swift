@@ -76,6 +76,7 @@ LeedCode 刷题
 
 10. func isPalindrome(_ s: String) -> Bool
 
+11.public int titleToNumber(String s)
 
 ```
 
