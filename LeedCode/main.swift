@@ -14,5 +14,5 @@ let linked = Linked()
 let dic = Dichotomy()
 let dfs = DFS()
 
-print(dfs.climbStairs2(6))
+testArray.majorityElement([3,2,3])
 

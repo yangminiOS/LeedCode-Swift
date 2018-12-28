@@ -527,4 +527,26 @@ class Array: NSObject {
         return result
     }
     
+    
+    func majorityElement(_ nums: [Int]) -> Int {
+        var item = 0
+        var count = 0
+        
+        for(index, num) in nums.enumerated() {
+            if(count == 0) {
+                item = num
+                count = 1
+                print(item)
+            }else if(item == num){
+                count += 1
+                
+            }else {
+                count -= 1
+                
+            }
+        }
+        
+        return item
+    }
+    
 }
