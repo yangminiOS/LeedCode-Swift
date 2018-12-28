@@ -48,6 +48,8 @@ LeedCode 刷题
 
 23. func twoSum(_ numbers: [Int], _ target: Int) -> [Int]
 
+24.func majorityElement(_ nums: [Int]) -> Int
+
 ```
 #### 第二部分 字符串操作
 
