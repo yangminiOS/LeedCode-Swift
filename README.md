@@ -131,7 +131,7 @@ LeedCode 刷题
 ### 第四部分 数据库
 
 ```
-
+1.Select Email From Person Group By Email Having Count(*) > 1
 
 
 
