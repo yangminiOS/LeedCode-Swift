@@ -101,6 +101,8 @@ LeedCode 刷题
 
 // 不支持Swift
 9. public ListNode getIntersectionNode(ListNode headA, ListNode headB)
+
+10.func removeElements(_ head: ListNode?, _ val: Int) -> ListNode?
 ```
 #### 第三部分  DFS
 ```
