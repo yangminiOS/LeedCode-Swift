@@ -532,7 +532,7 @@ class Array: NSObject {
         var item = 0
         var count = 0
         
-        for(index, num) in nums.enumerated() {
+        for(_, num) in nums.enumerated() {
             if(count == 0) {
                 item = num
                 count = 1
@@ -549,4 +549,110 @@ class Array: NSObject {
         return item
     }
     
+    /*
+     public int titleToNumber(String s) {
+     int result = 0;
+     for(int i=0;i< s.length();i++){
+     result = result*26+(s.charAt(i)-'A'+1);
+     }
+     return result;
+     }
+     
+     
+     */
+    
+    func isHappy(_ n: Int) -> Bool {
+        if(n == 1 ) {
+            return true
+        }else if(n < 10){
+            if n == 4 {return false}
+            return isHappy(_:n * n)
+        }else {
+            let intString = String(n)
+            var sum = 0
+            for itemChar in intString {
+                let item = "\(itemChar)"
+                let count = Int(item) ?? 0
+                sum = sum + count * count
+            }
+            print(sum)
+            return isHappy(_: sum)
+        }
+    }
+    
+    
+    func containsDuplicate(_ nums: [Int]) -> Bool {
+        
+        let result = false
+        
+        var dict: [Int: Int] = [:]
+        
+        for item in nums {
+            
+            if dict[item] != nil {
+                return true
+            }else{
+                dict[item] =  item
+            }
+        }
+        
+        return result
+        
+    }
+    
+    //  2019.1.5
+    func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {
+        let result = false
+        
+        var dict: [Int: Int] = [:]
+        let count = nums.count
+        
+        for i in 0 ..< count {
+            
+            if let vaule = dict[nums[i]] {
+                
+                if (i - vaule <= k) {
+                    return true
+                }else {
+                    dict[nums[i]] = i
+                }
+                
+            }else {
+                dict[nums[i]] = i
+            }
+        }
+        
+        return result
+    }
+    
+    
+    func missingNumber(_ nums: [Int]) -> Int {
+        
+        var result = 0
+        var sum = 0
+        var max = 0
+        var min = nums[0]
+        
+        for item in nums {
+            
+            sum = sum + item
+            
+            max = item > max ? item : max
+            
+            min = item < min ? item : min
+        }
+        
+        if(max - min + 1 == nums.count) {
+            
+            result = min == 0 ? (max + 1) : (min - 1)
+            
+        }else{
+            
+            result = (min +  max) * (nums.count  + 1) / 2 - sum
+        }
+        
+        print(result)
+        return result
+        
+    }
 }

@@ -14,5 +14,5 @@ let linked = Linked()
 let dic = Dichotomy()
 let dfs = DFS()
 
-testArray.majorityElement([3,2,3])
+testArray.missingNumber([4])
 

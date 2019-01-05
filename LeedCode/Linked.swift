@@ -309,5 +309,24 @@ class Linked: NSObject {
      }
      */
     
+    func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
+        var newHead: ListNode? = ListNode.init(0)
+        newHead?.next = head
+        let result = newHead
+        var curr = newHead?.next
+        while curr != nil {
+            if(curr?.val == val) {
+                newHead?.next = curr?.next
+                var temp = curr
+                curr = newHead?.next
+                temp = nil
+            }else {
+                newHead = curr
+                curr = curr?.next
+            }
+            
+        }
+        return result?.next
+    }
     
 }
