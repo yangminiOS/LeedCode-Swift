@@ -50,6 +50,8 @@ LeedCode 刷题
 
 24.func majorityElement(_ nums: [Int]) -> Int
 
+25. func containsDuplicate(_ nums: [Int]) -> Bool
+
 ```
 #### 第二部分 字符串操作
 
@@ -76,6 +78,7 @@ LeedCode 刷题
 
 10. func isPalindrome(_ s: String) -> Bool
 
+11.public int titleToNumber(String s)
 
 ```
 
@@ -100,6 +103,8 @@ LeedCode 刷题
 
 // 不支持Swift
 9. public ListNode getIntersectionNode(ListNode headA, ListNode headB)
+
+10.func removeElements(_ head: ListNode?, _ val: Int) -> ListNode?
 ```
 #### 第三部分  DFS
 ```
@@ -122,6 +127,15 @@ LeedCode 刷题
 
 ```
 1. func mySqrt(_ x: Int) -> Int
+
+
+
+```
+
+### 第四部分 数据库
+
+```
+1.Select Email From Person Group By Email Having Count(*) > 1
 
 
 
