@@ -52,6 +52,8 @@ LeedCode 刷题
 
 25. func containsDuplicate(_ nums: [Int]) -> Bool
 
+26.func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool
+
 ```
 #### 第二部分 字符串操作
 
