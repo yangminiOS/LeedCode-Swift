@@ -54,6 +54,8 @@ LeedCode 刷题
 
 26.func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool
 
+27.func missingNumber(_ nums: [Int]) -> Int
+
 ```
 #### 第二部分 字符串操作
 
