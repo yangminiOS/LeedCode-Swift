@@ -56,6 +56,8 @@ LeedCode 刷题
 
 27.func missingNumber(_ nums: [Int]) -> Int
 
+28.func moveZeroes(_ nums: inout [Int])
+
 ```
 #### 第二部分 字符串操作
 
