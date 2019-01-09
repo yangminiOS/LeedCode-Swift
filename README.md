@@ -58,6 +58,8 @@ LeedCode 刷题
 
 28.func moveZeroes(_ nums: inout [Int])
 
+29.  func arrayPairSum(_ nums: [Int]) -> Int
+
 ```
 #### 第二部分 字符串操作
 
