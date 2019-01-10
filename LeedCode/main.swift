@@ -14,5 +14,7 @@ let linked = Linked()
 let dic = Dichotomy()
 let dfs = DFS()
 
-testArray.missingNumber([4])
+var array:[Int] = [1,1]
+//testArray.arrayPairSum(array)
 
+testString.addDigits(346)

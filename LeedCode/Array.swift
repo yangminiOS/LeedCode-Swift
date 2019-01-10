@@ -655,4 +655,39 @@ class Array: NSObject {
         return result
         
     }
+    
+    //2019.1.7
+    func moveZeroes(_ nums: inout [Int]) {
+        
+        let count = nums.count
+        
+        var index = 0
+        for i in 0 ..< count {
+            
+            if i >= index && nums[i] != 0{
+                let temp = nums[index]
+                nums[index] = nums[i]
+                nums[i] = temp
+                index += 1
+            }
+            print(nums)
+        }
+    }
+    
+    func arrayPairSum(_ nums: [Int]) -> Int {
+        
+        var tempNums = nums
+        var result = 0
+        
+        tempNums.sort()
+        
+        for (index, item) in tempNums.enumerated() {
+            
+            if index % 2 == 0 {
+                result = result + item
+            }
+        }
+        print(result)
+        return result
+    }
 }

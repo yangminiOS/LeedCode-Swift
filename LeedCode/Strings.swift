@@ -371,19 +371,6 @@ class Strings: NSObject {
     }
     
     
-    func addBinary(_ a: String, _ b: String) -> String {
-        
-        var sum = ""
-        
-        let num1 = String(Int(a)!, radix: 2)
-        
-        let num2 = String(Int(b)!, radix: 2)
-        
-        
-        
-        return sum
-    }
-    
     
     //MARK: ******10.22
     
@@ -411,15 +398,41 @@ class Strings: NSObject {
     }
 
     
-    func convertToTitle(_ n: Int) -> String {
+    func addBinary(_ a: String, _ b: String) -> String {
+        var new = ""
         
-        var result = ""
+        let newa = String(a.reversed())
+        
+        let newb = String(b.reversed())
+        
+        var temp = 0
+        
+        var count = newa.count > newb.count ? newb.count : newa.count
+        
+        var index = 0
+        
+        while index < count  {
+            
+    
+            index += 1
+        }
         
         
-        
-        
+        return new
+    }
+    
+    func addDigits(_ num: Int) -> Int {
+        var result = num
+
+        while result >= 10 {
+            let temp = String(result)
+            result = 0
+            for item in temp {
+                result = result +  Int("\(item)")!
+            }
+        }
+        //print(result)
         return result
-        
     }
    
 }
