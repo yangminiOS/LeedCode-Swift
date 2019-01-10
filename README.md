@@ -52,6 +52,14 @@ LeedCode 刷题
 
 25. func containsDuplicate(_ nums: [Int]) -> Bool
 
+26.func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool
+
+27.func missingNumber(_ nums: [Int]) -> Int
+
+28.func moveZeroes(_ nums: inout [Int])
+
+29.  func arrayPairSum(_ nums: [Int]) -> Int
+
 ```
 #### 第二部分 字符串操作
 
@@ -79,6 +87,8 @@ LeedCode 刷题
 10. func isPalindrome(_ s: String) -> Bool
 
 11.public int titleToNumber(String s)
+
+12.func addDigits(_ num: Int) -> Int
 
 ```
 
