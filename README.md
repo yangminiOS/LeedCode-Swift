@@ -88,6 +88,8 @@ LeedCode 刷题
 
 11.public int titleToNumber(String s)
 
+12.func addDigits(_ num: Int) -> Int
+
 ```
 
 #### 第三部分  链表操作
